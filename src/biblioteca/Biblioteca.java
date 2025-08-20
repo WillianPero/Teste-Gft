@@ -1,35 +1,15 @@
-package biblioteca;
+Estou desenvolvendo um sistema simples de gerenciamento de biblioteca em Java usando programação orientada a objetos. Preciso de ajuda para estruturar duas classes principais:
 
-import livro.Livro;
-import java.util.ArrayList;
-import java.util.List;
+Livro, com os atributos titulo, autor e anoPublicacao.
 
-public class Biblioteca {
-    private List<Livro> livros;
+Biblioteca, que deve armazenar uma lista de livros.
 
-    public Biblioteca() {
-        livros = new ArrayList<>();
-    }
+Quero implementar funcionalidades como:
 
-    public void adicionarLivro(Livro livro) {
-        livros.add(livro);
-    }
+Adicionar novos livros à biblioteca
 
-    public void listarLivros() {
-        for (Livro livro : livros) {
-            System.out.println(livro);
-        }
-    }
+Listar todos os livros cadastrados
 
-    public void buscarPorAutor(String autor) {
-        for (Livro livro : livros) {
-            if (livro.getAutor().equalsIgnoreCase(autor)) {
-                System.out.println(livro);
-            }
-        }
-    }
+Buscar livros por autor
 
-    public boolean removerLivro(String titulo) {
-        return livros.removeIf(livro -> livro.getTitulo().equalsIgnoreCase(titulo));
-    }
-}
+(Desafio extra) Remover livros pelo título
