@@ -1,3 +1,4 @@
+/*
 Estou desenvolvendo um sistema simples de gerenciamento de biblioteca em Java usando programação orientada a objetos. Preciso de ajuda para estruturar duas classes principais:
 
 Livro, com os atributos titulo, autor e anoPublicacao.
@@ -13,3 +14,4 @@ Listar todos os livros cadastrados
 Buscar livros por autor
 
 (Desafio extra) Remover livros pelo título
+*/
